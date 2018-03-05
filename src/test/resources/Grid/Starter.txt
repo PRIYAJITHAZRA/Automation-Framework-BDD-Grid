@@ -1,0 +1,3 @@
+start G:\Priyajit-Software\JAVA\Selenium-Grid\Hub_Runner.bat
+start G:\Priyajit-Software\JAVA\Selenium-Grid\Node_1_Runner.bat
+start G:\Priyajit-Software\JAVA\Selenium-Grid\Node_2_Runner.bat

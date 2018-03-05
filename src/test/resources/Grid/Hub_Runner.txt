@@ -1,0 +1,1 @@
+java -jar G:\Priyajit-Software\JAVA\Selenium-Grid\selenium-server-standalone-3.9.1.jar -role hub -hubConfig G:\Priyajit-Software\JAVA\Selenium-Grid\Hub.json
