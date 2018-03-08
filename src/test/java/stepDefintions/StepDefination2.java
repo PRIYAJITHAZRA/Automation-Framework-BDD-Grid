@@ -23,20 +23,20 @@ import java.util.List;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-import baseClass.BaseUtil;
+
 
 import org.openqa.selenium.support.PageFactory;
 
 //@CucumberOptions (plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/reports/SampleBank_Automation_report.html"})
 public class StepDefination2 {
 	
-	 private  BaseUtil base;
+
 	 private static WebDriver driver;
 	 private static PageObjectManager pageobjmanager=new PageObjectManager();
 	 public static Scenario scenario;
 	 
-	 public StepDefination2(BaseUtil base) {
-	        this.base = base;
+	 public StepDefination2(String base) {
+	   
 	    }
 	
 	    public StepDefination2()

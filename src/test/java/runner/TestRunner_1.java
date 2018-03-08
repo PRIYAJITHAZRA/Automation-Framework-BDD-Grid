@@ -16,7 +16,6 @@ import com.cucumber.listener.Reporter;
 
 import utilitiesClass.Excel_Read;
 import utilitiesClass.Report_Archiver;
-import baseClass.BaseUtil;
 import cucumber.api.junit.*;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -53,7 +52,7 @@ import org.junit.runner.RunWith;
 			monochrome = true,
 			
 			// tags is used to run selective scenario
-            tags = {"@CHROME"},
+            tags = {"@CHROME1"},
             // tags = "@SmokeTest2",
             
             /*

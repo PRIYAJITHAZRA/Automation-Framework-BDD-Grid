@@ -6,8 +6,6 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.WebDriver;
-
-import baseClass.BaseUtil;
 import pageObjects_Application1.LoginPage_Application1;
 import pageObjects_Application1.LogoutPage_Application1;
 import pageObjects_Application2.Search_Page_Application2;
@@ -16,7 +14,7 @@ import utilitiesClass.Screen_Shot_Taker;
 		 
 	public class PageObjectManager {
 	 
-		private BaseUtil base;
+	
 		public  WebDriver driver;
 		String Checker_ForApplication_2;
 		LoginPage_Application1 loginPage_Application1 = new LoginPage_Application1();

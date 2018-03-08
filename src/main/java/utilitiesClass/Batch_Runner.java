@@ -15,7 +15,8 @@ import org.codehaus.plexus.util.cli.WriterStreamConsumer;
  * @author Priyajit
  *
  */
-public class Batch_Runner {	
+public class Batch_Runner {
+	File_Managers reader=new File_Managers();
 		public void batchRunner() {
 			String batfile = "Starter.bat";
 			String directory = "G:\\Priyajit-Software\\JAVA\\Selenium-Grid";
@@ -47,7 +48,7 @@ public class Batch_Runner {
 		Runtime runtime = Runtime.getRuntime();
 	        try {
 	            //Pass string in this format to open Batch file
-	            runtime.exec("cmd /c start G:\\Priyajit-Software\\JAVA\\Selenium-Grid\\Starter.bat");
+	            runtime.exec("cmd /c start "+reader.Read_Property_File("Grid_Batch_Path"));
 	        } catch (IOException e) 
 	        {
 		}

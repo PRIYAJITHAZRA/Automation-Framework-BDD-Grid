@@ -27,13 +27,12 @@ import com.cucumber.listener.Reporter;
 
 import utilitiesClass.Batch_Runner;
 import utilitiesClass.Excel_Read;
+import utilitiesClass.File_Managers;
 import utilitiesClass.Report_Archiver;
-import baseClass.BaseUtil;
 import cucumber.api.junit.*;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
-import managers.FileReaderManager;
 import runner.TestRunner_1;
 import runner.TestRunner_2;
 import runner.TestRunner_3;
@@ -51,7 +50,8 @@ public class Parallel_Runner {
 	  @Test
 	public void runAllTests() throws IOException, InterruptedException {
 	        Class<?>[] classes = {TestRunner_1.class,TestRunner_3.class,TestRunner_2.class};
-	        if (FileReaderManager.getInstance().getConfigReader().getEnvironment().toString()=="REMOTE")
+	        File_Managers reader=new File_Managers();
+	        if (reader.Read_Property_File("environment").equalsIgnoreCase("REMOTE"))
 			{
 			Batch_Runner  batch_runner = new Batch_Runner();
 			batch_runner.Trigger_Bartch();

@@ -1,4 +1,4 @@
-@CHROME
+@CHROME1
 Feature: Login to HP Webtour and Pass the information to another application using Chrome browser
 @EXecution_Set1
   Scenario Outline:F1_Scenario1
