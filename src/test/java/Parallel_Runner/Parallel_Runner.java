@@ -43,15 +43,13 @@ import java.io.IOException;
 
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
-
-
 public class Parallel_Runner {
 	
 	  @Test
 	public void runAllTests() throws IOException, InterruptedException {
 	        Class<?>[] classes = {TestRunner_1.class,TestRunner_3.class,TestRunner_2.class};
 	        File_Managers reader=new File_Managers();
-	        if (reader.Read_Property_File("environment").equalsIgnoreCase("REMOTE"))
+	        if (reader.Read_Property_File("environment").equalsIgnoreCase("remote"))
 			{
 			Batch_Runner  batch_runner = new Batch_Runner();
 			batch_runner.Trigger_Bartch();
@@ -59,6 +57,5 @@ public class Parallel_Runner {
 			}
 			JUnitCore.runClasses(new ParallelComputer(true, true), classes);
 	        Report_Archiver.Archive_Report();
-			
 	        }
 }

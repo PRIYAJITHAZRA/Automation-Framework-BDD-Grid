@@ -13,5 +13,5 @@ Feature: Login to HP Webtour and Pass the information to another application
   Examples:
   
      |username                |password   | URLFirst                                    |URLSecond             |browser|node|
-     |priyajithzraxx@gmail.com|Priya123456|http://newtours.demoaut.com/mercurysignon.php|http://www.google.com |CHROME|5556|  
+     |priyajithzraxx@gmail.com|Priya123456|http://newtours.demoaut.com/mercurysignon.php|http://www.flipkart.com |CHROME|5556|  
  
