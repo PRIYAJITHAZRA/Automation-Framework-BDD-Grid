@@ -52,7 +52,7 @@ public class Parallel_Runner {
 			{
 			Batch_Runner  batch_runner = new Batch_Runner();
 			batch_runner.Trigger_Bartch();
-			Thread.sleep(2000);
+			Thread.sleep(1500);
 			}
 			JUnitCore.runClasses(new ParallelComputer(true, true), classes);
 	        Report_Archiver.Archive_Report();
