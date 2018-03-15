@@ -44,7 +44,6 @@ import java.io.IOException;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 public class Parallel_Runner {
-	
 	  @Test
 	public void runAllTests() throws IOException, InterruptedException {
 	        Class<?>[] classes = {TestRunner_1.class,TestRunner_3.class,TestRunner_2.class};
@@ -53,7 +52,7 @@ public class Parallel_Runner {
 			{
 			Batch_Runner  batch_runner = new Batch_Runner();
 			batch_runner.Trigger_Bartch();
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			}
 			JUnitCore.runClasses(new ParallelComputer(true, true), classes);
 	        Report_Archiver.Archive_Report();
